@@ -18,10 +18,16 @@ Every page includes a banner stating this is a preview and not yet published by 
 
 ## GitHub Pages Setup
 
-To enable the live site at `https://rutmehta.github.io/freddys-roofing-preview/`:
+**Manual setup required:** Due to GitHub API permissions, Pages must be enabled manually in repository settings.
 
-1. Go to repository **Settings** → **Pages**
-2. Under **Source**, select **GitHub Actions**
-3. The workflow will automatically deploy the site
+### Steps to enable the live site:
+
+1. Go to https://github.com/rutmehta/freddys-roofing-preview/settings/pages
+2. Under **Build and deployment**:
+   - **Source**: Select "GitHub Actions" from the dropdown
+3. Click **Save**
+4. Wait 1-2 minutes for the workflow to deploy
 
 Once enabled, the site will be live at: **https://rutmehta.github.io/freddys-roofing-preview/**
+
+The GitHub Actions workflow (`.github/workflows/deploy-pages.yml`) will automatically deploy any future changes pushed to the `main` branch.
